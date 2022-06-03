@@ -1,0 +1,16 @@
+.experience {
+    color: white;
+    background: #77ABB7;
+    height: 80vh;
+    position: relative;
+}
+
+.card2 {
+    background: rgb(82, 186, 228);
+    top: 30%;
+    left: 30%;
+    height: 400px;
+    width: 300px;
+    position: absolute;
+
+}

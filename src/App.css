@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+     margin: 0;
+    padding: 0; 
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,300&family=Red+Hat+Display:wght@500;700;900&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+body {
+    background: #071E3D;
+    margin: 0;
+    font-family: Poppins;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  */
+
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .intro {
+      position: relative;
+      width: 100%;
+      height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+    .intro-text {
+      color: white;
+      position: absolute; 
+      text-align: center;
+     /* border: dotted white; */
+     top: 40%;
+     left: calc(50% - 295px);
+  }  
+
+  .intro-text p {
+      margin-bottom: 10px;
+      color: rgb(82, 186, 228);
+      font-size: 2rem;
   }
+
+  .intro-text h1 {
+      margin-bottom: 15px;
+      font-size: 2.3rem;
+  }
+
+  .subtitle {
+      color: #77ABB7;
+  }
+
+  /* .container {
+      border: solid white;
+  } */
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+.initials {
+    display: inline-block;
+    color: #071E3D;
+}
+
+.burger {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    background-color: #e6f1ff;
+}
+
+
+.main-header {
+    width: 100%;
+    background-color: #77ABB7;
+    color: white;
+    padding: 8px 16px;
+    top: 0;
+    left: 0;
+}
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+    color: #071E3D;
+}
+
+.main-nav {
+    display: inline-block;
+    color: white;
+    text-align: right;
+    vertical-align: middle; 
+    width: calc(100% - 95px);
+    display:none;
+}
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background-color: #77ABB7;
+    width: 80%;
+    height: 100vh;
+}
+
+.monile-nav__items {
+    /* text-align: center;
+    width: 90%;
+    height: 100%; */
+    list-style: none;
+}
+
+.mobile-nav__item {
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin-top: 10rem;
+}
+
+.nav-links {
+    text-decoration: none;
+    width: 90%;
+}
+
+@media (min-width: 40rem) {
+    .main-nav {
+     display: inline-block;
+    }
+    .burger div{
+        display: none;
+    }
+
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+    /* color: #071E3D; */
+}
+
+.main-nav__items {
+
+    margin-left: 200px;
+    padding: 0;
+    text-align: right;
+}
+
+.nav-links {
+    color: #e6f1ff;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.main-nav__item a:hover {
+    background-color: #90B8F8;
+    border-radius: 4px;
+    color: firebrick;
+}
+
+.intro-image {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
+    display: none;
+}
+
+/* .intro-image img {
+    width: 80%;
+    
+} */
+
+.myImg {
+    height: 250px;
+    width: 250px;
+    clip-path: circle();
+    background-color: white;
+    padding: 25px;
+    position: absolute;
+    bottom: 20%;
+    left: 30%; 
 }
