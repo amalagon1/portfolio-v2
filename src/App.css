@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,300&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 * {
     box-sizing: border-box;
      margin: 0;
@@ -5,48 +8,63 @@
     
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,300&family=Red+Hat+Display:wght@500;700;900&display=swap');
-
-
 body {
-    background: #071E3D;
+    background:#eeeff1;
     margin: 0;
-    font-family: Poppins;
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;  */
-
+    font-family: "Poppins";
   }
+
+  /* body::after{
+      clip-path: polygon(100% 33%, 0% 100%, 100% 100%);
+      background: linear-gradient(45deg,rgba(216, 46, 8, 0.085), rgba(62, 7, 189, 0.126));
+      width: 100%;
+      height: 100%;
+  } */
+
   
   .intro {
+    background-image: linear-gradient( 175deg,#77ABB7,#eeeff1) ;
       position: relative;
       width: 100%;
       height: 100vh;
   }
-    .intro-text {
+
+  .intro button {
+      background-color: #1a1b1f;
+      background-size: auto;
+      border: white;
+      border-radius: 8px;
+      width: 175px;
+      height: 60px;
       color: white;
+      font: 20px "Poppins";
+      margin-left: 20px;
+      cursor: pointer;
+  }
+    .intro-text {
+      color: black;
       position: absolute; 
-      text-align: center;
+      text-align:left;
      /* border: dotted white; */
-     top: 40%;
-     left: calc(50% - 295px);
+     top: 30%;
+     padding-left: 16px;
+     font-size: 60px;
   }  
 
   .intro-text p {
       margin-bottom: 10px;
-      color: rgb(82, 186, 228);
-      font-size: 2rem;
+      /* color: rgb(82, 186, 228); */
+      font-size: inherit;
   }
 
   .intro-text h1 {
       margin-bottom: 15px;
-      font-size: 2.3rem;
+      font-size: inherit;
   }
 
   .subtitle {
-      color: #77ABB7;
+      /* color: #77ABB7; */
+      color: black;
   }
 
   /* .container {
@@ -79,11 +97,13 @@ body {
 
 .main-header {
     width: 100%;
-    background-color: #77ABB7;
-    color: white;
+    background-color: rgba(0,0,0,0);
+    color: black;
     padding: 8px 16px;
     top: 0;
     left: 0;
+    position: fixed;
+    z-index: 100;
 }
 
 .main-header > div {
@@ -92,9 +112,14 @@ body {
     color: #071E3D;
 }
 
+.name {
+    display: inline-block;
+}
+
 .main-nav {
     display: inline-block;
-    color: white;
+    color: black;
+    font-weight: bold;
     text-align: right;
     vertical-align: middle; 
     width: calc(100% - 95px);

@@ -1,26 +1,23 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function Nav() {
 
     const MenuItems = [
         {
             title: 'About me',
-            url: '#',
+            url: '/About',
             class: 'nav-links'
         },
-        // {
-        //     title: 'Experience',
-        //     url: '#',
-        //     class: 'nav-links'
-        // },
+
         {
             title: 'Projects',
-            url: '#',
+            url: '/Projects',
             class: 'nav-links'
         },
         {
             title: 'Contact Me',
-            url: '#',
+            url: '/Contact',
             class: 'nav-links'
         }
     ]
@@ -29,6 +26,7 @@ function Nav() {
             <div className='initials'>
                 <h1>A.M</h1>
             </div>
+            {/* <div className="name"> Andres Malagon</div> */}
             <div className='burger'>
                 <div className='line1'></div>
                 <div className='line2'></div>
@@ -40,23 +38,16 @@ function Nav() {
                     {MenuItems.map((item, index) => {
                         return (
                             <li className='main-nav__item'>
-                                <a className={item.class}
-                                    href={item.url}>
-                                    {item.title}</a>
-                            </li>
+                                {item.title}
+                                {/* <a className={item.class} href={item.url}>
+                                    {item.title}
+                                </a> */}
 
+                            </li>
                         )
 
                     })}
-                    {/* <li className='main-nav__item'>
-                        <p>experience</p>
-                    </li>
-                    <li className='main-nav__item'>
-                        <p>projects</p>
-                    </li>
-                    <li className='main-nav__item'>
-                        <p>Testimonials</p>
-                    </li> */}
+
                 </ul>
 
             </nav>

@@ -1,25 +1,38 @@
-.projects {
-   /* background-color: green; */
+/* .projects {
+   margin-top: 30px;
     text-align: center;
+      display: grid; 
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 3; 
+} */
+
+.projects-grid {
+    margin-top: 30px;
+    text-align: center;
+      /* display: grid; 
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 3;  */
 }
 
 .projects h1 {
-    color: white;
+    color: black;
     margin-bottom: 30px;
 }
 
 .card {
-    color: white;
+    color: firebrick;
     /* width: 40%; */
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 350px;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    margin: auto;
+    margin: 8px;
     position: relative;
     border: solid white;
+    border-radius: 7px;
 }
+
 
 .card:hover img {
     opacity: 0.3;
@@ -63,7 +76,7 @@ height: 100%;
 } */
 
 .btn {
-    background-color: #90B8F8;
+background-color: #90B8F8;
   font-size: 16px;
   padding: 16px 32px;
   cursor: pointer;
@@ -73,7 +86,7 @@ height: 100%;
 
  .btn a {
     text-decoration: none;
-    color: white;
+    color: firebrick;
     
 }
 
