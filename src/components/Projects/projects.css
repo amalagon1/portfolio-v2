@@ -17,10 +17,11 @@
 .projects h1 {
     color: black;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .card {
-    color: firebrick;
+    color: rgb(163, 39, 107);
     /* width: 40%; */
     width: 300px;
     height: 350px;
@@ -29,8 +30,7 @@
     text-align: center;
     margin: 8px;
     position: relative;
-    border: solid white;
-    border-radius: 7px;
+    border: transparent;
 }
 
 

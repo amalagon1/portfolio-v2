@@ -12,22 +12,36 @@
 
 .contact-form {
     height: 300px;
-    width: 70%;
+    width: 60%;
     background: #eeeff1;
-    margin-bottom: 30px;
-    margin-left: 110px;
+    /* margin-bottom: 30px;
+    margin-left: 110px; */
+    margin: auto;
     border-radius: 8px;
     color: black;
     border: solid black;
     padding: 10px;
+    position: relative;
     
 }
 
 #message {
     height: 120px;
-    width: 300px;
+    width: 300px; 
     border-radius: 5px;
-    margin-left: 7px;
+    /* margin-left: 7px; */
+    margin: auto;
+}
+
+.button {
+    left: 45%;
+    bottom: 15%;
+    position: absolute;
+    background: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+
 }
 
 .message-container {
@@ -35,7 +49,9 @@
 }
 
 .form-items {
-    margin: 30px 30px;
+    margin: auto;
+    top: 20%;
+    left: 25%;
 }
 
 

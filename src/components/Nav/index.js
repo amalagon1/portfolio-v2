@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
 function Nav() {
+
+    const [open, setOpen] = useState(false);
+
+    const showMenu = () => {
+        setOpen(!open)
+    }
 
     const MenuItems = [
         {
@@ -11,9 +17,9 @@ function Nav() {
         },
 
         {
-            title: 'Projects',
+            title: 'View Work',
             url: '/Projects',
-            class: 'nav-links'
+            class: 'work-btn'
         },
         {
             title: 'Contact Me',
@@ -27,21 +33,20 @@ function Nav() {
                 <h1>A.M</h1>
             </div>
             {/* <div className="name"> Andres Malagon</div> */}
-            <div className='burger'>
-                <div className='line1'></div>
-                <div className='line2'></div>
-                <div className='line3'></div>
-            </div>
+            <button className='burger' onClick={showMenu}>
+                <span className='burger-line'></span>
+                <span className='burger-line'></span>
+                <span className='burger-line'></span>
+            </button>
 
             <nav className='main-nav'>
                 <ul className='main-nav__items'>
                     {MenuItems.map((item, index) => {
                         return (
                             <li className='main-nav__item'>
-                                {item.title}
-                                {/* <a className={item.class} href={item.url}>
+                                <a className={item.class} href={item.url}>
                                     {item.title}
-                                </a> */}
+                                </a>
 
                             </li>
                         )
@@ -51,7 +56,7 @@ function Nav() {
                 </ul>
 
             </nav>
-            <nav className='mobile-nav'>
+            <nav className={open ? "mobile-show" : "mobile-nav"}>
                 <ul className='mobile-nav__items'>
                     {MenuItems.map((item, index) => {
                         return (

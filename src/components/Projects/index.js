@@ -41,6 +41,11 @@ function Projects() {
             title: "WWII Trivia Game",
             image: project5,
             github: "https://github.com/amalagon1/trivia-quiz"
+        },
+        {
+            title: "WWII Trivia Game",
+            image: project5,
+            github: "https://github.com/amalagon1/trivia-quiz"
         }
     ]
     //added projects-grid div//
