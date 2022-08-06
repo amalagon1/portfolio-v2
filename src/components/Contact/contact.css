@@ -2,7 +2,10 @@
     margin-top: 5rem;
     color: white;
     height: 500px;
-    background-image: linear-gradient(#eeeff1, #77ABB7) ;
+    background-image: linear-gradient(#eeeff1, #77ABB7);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contact h1 {
@@ -11,41 +14,74 @@
 }
 
 .contact-form {
-    height: 300px;
-    width: 60%;
-    background: #eeeff1;
-    /* margin-bottom: 30px;
-    margin-left: 110px; */
-    margin: auto;
-    border-radius: 8px;
-    color: black;
-    border: solid black;
-    padding: 10px;
-    position: relative;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
     
+}
+
+.contact-form input {
+    height: 1.7rem;
+    width: 350px;
+}
+
+.contact-form label {
+    margin-right: 5px;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* input [type=text] {
+    width: 100%;
+} */
+
+@media(min-width: 40rem) {
+    .contact-form{
+        /* height: 300px; */
+        width: 60%;
+        background: #eeeff1;
+        /* margin-bottom: 30px;
+        margin-left: 110px; */
+        margin: auto;
+        border-radius: 8px;
+        color: black;
+        border: solid black;
+        padding: 10px;
+        position: relative;
+    }
 }
 
 #message {
     height: 120px;
-    width: 300px; 
+    width: 350px; 
     border-radius: 5px;
-    /* margin-left: 7px; */
+    margin-left: 7px;
     margin: auto;
 }
 
 .button {
-    left: 45%;
+    /* left: 45%;
     bottom: 15%;
-    position: absolute;
+    position: absolute; */
     background: black;
     color: #fff;
     padding: 10px;
     border-radius: 4px;
-
+    width: 100px;
+    align-self: center;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .message-container {
     margin-top: 30px;
+    flex-direction: column;
 }
 
 .form-items {

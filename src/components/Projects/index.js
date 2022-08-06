@@ -40,7 +40,8 @@ function Projects() {
         {
             title: "WWII Trivia Game",
             image: project5,
-            github: "https://github.com/amalagon1/trivia-quiz"
+            github: "https://github.com/amalagon1/trivia-quiz",
+            deployment: "https://amalagon1.github.io/trivia-quiz/"
         },
         {
             title: "WWII Trivia Game",
@@ -62,7 +63,7 @@ function Projects() {
                                 <a href={item.github}>Github</a>
                             </div>
                             <div className='btn'>
-                                <a href={item.github}>Deployment</a>
+                                <a href={item.deployment}>Deployment</a>
                             </div>
                         </div>
 

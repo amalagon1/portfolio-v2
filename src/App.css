@@ -23,10 +23,12 @@ body {
 
   
   .intro {
-    background-image: linear-gradient( 175deg,#77ABB7,#eeeff1) ;
+    /* background-image: linear-gradient( 175deg,#77ABB7,#eeeff1) ; */
+    /* display: flex; */
+    flex-direction: column;
       position: relative;
-      width: 100%;
-      height: 100vh;
+       width: 100%;
+      height: 100vh; 
   }
 
   .intro button {
@@ -68,6 +70,19 @@ body {
    padding-left: 16px;
    font-size: 50px;
 }  
+
+.photo-container {
+    height: 200px;
+    width: 150px;
+    clip-path: circle;
+}
+
+.photo-container img{
+    height: 100%;
+    width: 100%;
+    clip-path: circle(40%);
+    background-color: white;
+}
  
 
   .intro-text p {
@@ -85,6 +100,7 @@ body {
       /* color: #77ABB7; */
       color: black;
       margin: auto;
+      
   }
 
   /* .container {
@@ -97,8 +113,15 @@ body {
   }
   
 .initials {
-    display: inline-block;
+    display: flex;
     color: #071E3D;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.initials h2 {
+    display: none;
 }
 
 .burger {
@@ -143,11 +166,11 @@ body {
     justify-content: space-between;
 }
 
-.main-header > div {
+/* .main-header > div {
     display: inline-block;
     vertical-align: middle;
     color: #071E3D;
-}
+} */
 
 .name {
     display: inline-block;
@@ -277,7 +300,12 @@ color: black;
     left: 30%; 
 }
 
-
+@media (min-width: 940px) {
+    .initials h2 {
+        display: flex;
+    }
+    
+}
  @media (min-width: 40rem) {
 
     .intro{
@@ -285,6 +313,7 @@ color: black;
         justify-content: center;
         align-items: center;
     }
+    
         .intro-text {
            top: 30%;
            padding-left: 16px;

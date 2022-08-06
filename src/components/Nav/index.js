@@ -31,8 +31,8 @@ function Nav() {
         <header className='main-header'>
             <div className='initials'>
                 <h1>A.M</h1>
+                <h2>Andres Malagon</h2>
             </div>
-            {/* <div className="name"> Andres Malagon</div> */}
             <button className='burger' onClick={showMenu}>
                 <span className='burger-line'></span>
                 <span className='burger-line'></span>
