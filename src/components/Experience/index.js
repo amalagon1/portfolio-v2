@@ -21,7 +21,7 @@ function Experience() {
                     <img src={me}></img>
                 </div> */}
                 <div className='summary'>
-                    <p>I am proficient in the following technologies: </p>
+                    <p>I am passionate about creating beautiful and dynamic UI. My experience at the University of Miami coding bootcamp exposed me to a wide variety of technologies and began my passion for programming. I want to build something for you!  </p>
                 </div>
                 <div className="icons">
                     <FontAwesomeIcon className="icon" icon={faReact} />

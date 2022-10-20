@@ -5,6 +5,7 @@ import project2 from '../../images/project-2.jpg'
 import project3 from '../../images/project-3.jpg'
 import project4 from '../../images/project-4.jpg'
 import project5 from '../../images/trivia-game.png'
+import project6 from '../../images/todo-app.png'
 
 
 function Projects() {
@@ -20,8 +21,8 @@ function Projects() {
         {
             title: "Weather Dashboard",
             image: project2,
-            github: "https://github.com/amalagon1/weather-dashboard"
-            // deployment:
+            github: "https://github.com/amalagon1/weather-dashboard",
+            deployment: "https://amalagon1.github.io/weather-dashboard/"
         },
 
         {
@@ -44,9 +45,9 @@ function Projects() {
             deployment: "https://amalagon1.github.io/trivia-quiz/"
         },
         {
-            title: "WWII Trivia Game",
-            image: project5,
-            github: "https://github.com/amalagon1/trivia-quiz"
+            title: "Todo App (Glass Theme)",
+            image: project6,
+            github: "https://github.com/amalagon1/todo-app-glass-theme"
         }
     ]
     //added projects-grid div//
@@ -58,7 +59,7 @@ function Projects() {
                     <div className='card'>
                         <img src={item.image}></img>
                         <div className="middle">
-                            <div className='title'><p>{item.title}</p></div>
+                            <div className='title'><h2>{item.title}</h2></div>
                             <div className='btn'>
                                 <a href={item.github}>Github</a>
                             </div>

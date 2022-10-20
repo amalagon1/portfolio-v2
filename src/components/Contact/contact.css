@@ -1,8 +1,8 @@
 .contact {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     color: white;
     height: 500px;
-    background-image: linear-gradient(#eeeff1, #77ABB7);
+    /* background-image: linear-gradient(#eeeff1, #77ABB7); */
     display: flex;
     justify-content: center;
     flex-direction: column;

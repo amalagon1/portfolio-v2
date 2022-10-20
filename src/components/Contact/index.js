@@ -48,7 +48,7 @@ function Contact() {
                     <input type="subject" id="subject" name="email" placeholder='your email here'></input>
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Your message here"></textarea>
-                    <button type="submit" class="button">Submit</button>
+                    <button type="submit" className="button">Submit</button>
                 </div>
             </div>
             {/* <div className="mobile-contact">

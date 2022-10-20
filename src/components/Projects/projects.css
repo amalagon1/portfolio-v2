@@ -9,6 +9,9 @@
 /* .projects {
     display: flex;
 } */
+.projects {
+    margin-bottom: 15rem;
+}
 
 .projects-grid {
     margin-top: 30px;

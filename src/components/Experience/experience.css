@@ -2,19 +2,24 @@
     color: white;
     /* background-image: linear-gradient(#eeeff1, #77ABB7); */
     /* background: #77ABB7; */
-    height: 600px;
+    height: 800px;
     position: relative;
     top:40%;
     display: flex;
     justify-content: center;
+    margin-bottom: 5rem;
 }
 
 /* @media(max-width: ) */
 
 .experience-items {
-    position: relative;
+    /* position: relative;
     top: 30%;
-    text-align: center;
+    text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 80%;
 }
 
@@ -42,12 +47,14 @@
     text-align: center;
     margin-bottom: 60px;
     font-family: inherit;
+    width: 50rem;
 }
 .summary p {
     color: #071E3D;
     display: inline-block;
     margin: auto;
     width: 100%;
+    font-size: 1.3rem;
 }
 
 .icon {
@@ -69,6 +76,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 600px;
+    margin-top: 5rem;
 }
 
 

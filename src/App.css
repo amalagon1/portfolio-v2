@@ -24,9 +24,10 @@ body {
   
   .intro {
     /* background-image: linear-gradient( 175deg,#77ABB7,#eeeff1) ; */
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
-      position: relative;
+    align-items: center;
+    justify-content: center;
        width: 100%;
       height: 100vh; 
   }
@@ -41,6 +42,13 @@ body {
       color: white;
       font: 20px "Poppins";
       margin-left: 20px;
+      cursor: pointer;
+  }
+
+  .icon-arrow {
+      height: 2.5rem;
+      position: absolute;
+      bottom: 15%;
       cursor: pointer;
   }
 
@@ -63,27 +71,56 @@ body {
 
   .intro-text {
     color: black;
-    position: absolute; 
     text-align:left;
-   /* border: dotted white; */
    top: 20%;
-   padding-left: 16px;
-   font-size: 50px;
+   /* padding-left: 16px; */
+   font-size: 30px;
+   
 }  
 
-.photo-container {
-    height: 200px;
-    width: 150px;
-    clip-path: circle;
+.intro-text h2 {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 4s linear infinite;
+    display: inline-block;
 }
 
-.photo-container img{
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+.photo-container {
+    /* background:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52),  rgba(68,64,64,1)),  */
+    background: url('./images/my-face.PNG')center/cover no-repeat;
+    height: 200px;
+    width: 200px;
+    clip-path: circle(50%);
+    
+}
+
+/* .photo-container img{
     height: 100%;
     width: 100%;
     clip-path: circle(40%);
     background-color: white;
 }
- 
+  */
 
   .intro-text p {
       margin-bottom: 10px;
@@ -93,14 +130,11 @@ body {
 
   .intro-text h1 {
       margin-bottom: 15px;
-      font-size: inherit;
   }
 
   .subtitle {
       /* color: #77ABB7; */
-      color: black;
-      margin: auto;
-      
+      color: black;   
   }
 
   /* .container {
@@ -273,6 +307,10 @@ body {
 color: black;
 }
 
+.title h2 {
+    font-weight: bold;
+}
+
 .intro-image {
     background-color: white;
     height: 200px;
@@ -306,23 +344,32 @@ color: black;
     }
     
 }
+
  @media (min-width: 40rem) {
 
     .intro{
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
+        flex-direction: column;
     }
     
-        .intro-text {
-           top: 30%;
-           padding-left: 16px;
-           font-size: 60px;
-        }  
-      
-     .subtitle{
-         margin: 0px 30px 0px 30px;
-     }
+    .intro-text {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; */
+        text-align: center;
+        font-size: 30px;
+    }  
+
+    .intro-text h2 {
+        font-size: 1.7rem;
+    }
+   
+    .btn-view {
+        margin-top: 40px;
+    }
      
     .main-nav {
      display: inline-block;
@@ -332,3 +379,4 @@ color: black;
     }
 
 }
+
