@@ -5,6 +5,7 @@ import './App.css';
 import './components/Projects/projects.css'
 import './components/Footer/footer.css'
 import App from './App';
+// import '../node_modules/font-awesome/css/font-awesome.min.css';
 import Contact from './components/Contact'
 
 

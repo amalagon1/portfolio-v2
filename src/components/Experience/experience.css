@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    max-width: 80%;
 }
 
 .img-container {
@@ -47,7 +47,8 @@
     text-align: center;
     margin-bottom: 60px;
     font-family: inherit;
-    width: 50rem;
+    /* width: 50rem; */
+   
 }
 .summary p {
     color: #071E3D;
@@ -60,6 +61,7 @@
 .icon {
     color: black;
     font-size: 3.7rem;
+    margin: 20px;
 }
 
  /* .icons {
@@ -73,11 +75,12 @@
 }  */
 
 .icons {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    width: 600px;
+    flex-wrap: wrap; */
+    /* width: 600px; */
     margin-top: 5rem;
+    text-align: center;
 }
 
 
