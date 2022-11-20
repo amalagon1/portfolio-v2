@@ -1,13 +1,15 @@
 .experience {
     color: white;
-    /* background-image: linear-gradient(#eeeff1, #77ABB7); */
+    /* background-image: linear-gradient(#eeeff1, hsl(266, 52%, 46%)); */
     /* background: #77ABB7; */
     height: 800px;
     position: relative;
     top:40%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 5rem;
+    /* border: dotted blue; */
 }
 
 /* @media(max-width: ) */
@@ -16,6 +18,10 @@
     /* position: relative;
     top: 30%;
     text-align: center; */
+    box-shadow: 10px 5px 5px 5px  grey;
+    background: rgba(255,255 , 255, 0.3);
+    border-radius: 8px;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;

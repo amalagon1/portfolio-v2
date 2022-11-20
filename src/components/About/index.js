@@ -16,16 +16,23 @@ function About() {
     };
 
     return (
-        <section className='intro'>
-            <div className='photo-container'>
-                {/* <img src={myFace} /> */}
-            </div>
-            <div className='intro-text'>
+        <section className='intro' id='intro'>
+            <div className='intro-wrapper'>
+                <div className='photo-container'>
+                    {/* <img src={myFace} /> */}
+                </div>
+                <div className='intro-text'>
 
-                <h1 className="subtitle">Andres Malagon</h1>
-                <h2>Front-end Web Developer</h2>
+                    <h1 className="subtitle">Andres Malagon</h1>
+                    <h2>Front-end Web Developer</h2>
 
+                    <button className="btn-work">
+                        View Work
+                    </button>
+
+                </div>
             </div>
+
             {/* <button class='btn-view'> View Work</button> */}
             <FontAwesomeIcon className="icon-arrow" icon={faChevronDown}
                 onClick={scrollDown} />

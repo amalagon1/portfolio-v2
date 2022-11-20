@@ -14,6 +14,21 @@ body {
     font-family: "Poppins";
   }
 
+  .backdrop {
+    /* opacity: 0; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    transition: opacity 2s linear;
+}
+
+.backdrop-hide{
+    display: none;
+}
   /* body::after{
       clip-path: polygon(100% 33%, 0% 100%, 100% 100%);
       background: linear-gradient(45deg,rgba(216, 46, 8, 0.085), rgba(62, 7, 189, 0.126));
@@ -25,14 +40,30 @@ body {
   .intro {
     /* background-image: linear-gradient( 175deg,#77ABB7,#eeeff1) ; */
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-       width: 100%;
+ 
+        width: 100%;
       height: 100vh; 
   }
 
-  .intro button {
+  .intro-wrapper {
+      /* position: absolute; */
+      /* margin-top: 3rem; */
+      /* top: 20%; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .fa-x {
+      z-index: 1;
+      background: rgba(0,0,0,0);
+  }
+
+  /* .intro button {
       background-color: #1a1b1f;
       background-size: auto;
       border: white;
@@ -43,6 +74,19 @@ body {
       font: 20px "Poppins";
       margin-left: 20px;
       cursor: pointer;
+  } */
+
+  .btn-work {
+    margin-top: 20px;
+    background-color: #1a1b1f;
+    border: white;
+    border-radius: 8px;
+    width: 125px;
+    height: 50px;
+    color: white;
+    font: 20px "Poppins";
+    cursor: pointer;
+
   }
 
   .icon-arrow {
@@ -50,6 +94,7 @@ body {
       position: absolute;
       bottom: 15%;
       cursor: pointer;
+      display: none;
   }
 
   .icons a {
@@ -84,15 +129,19 @@ body {
   }
 
   .intro-text {
+      margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: black;
     text-align:center;
    top: 20%;
-   /* padding-left: 16px; */
-   font-size: 30px;
+   /* font-size: 30px; */
    
-}  
+}   
 
 .intro-text h2 {
+    font-size: 2rem;
     text-transform: uppercase;
     background-image: linear-gradient(
       -225deg,
@@ -121,20 +170,13 @@ body {
 
 .photo-container {
     /* background:  linear-gradient(to bottom, rgba(245, 246, 252, 0.52),  rgba(68,64,64,1)),  */
-    background: url('./images/my-face.PNG')center/cover no-repeat;
-    height: 200px;
-    width: 200px;
-    clip-path: circle(50%);
-    
+    background: url('./images/my-face-removebg.png')center/cover no-repeat;
+    height: 250px;
+    width: 250px;
+    border-radius: 6px;
+    /* clip-path: circle(50%); */
 }
 
-/* .photo-container img{
-    height: 100%;
-    width: 100%;
-    clip-path: circle(40%);
-    background-color: white;
-}
-  */
 
   .intro-text p {
       margin-bottom: 10px;
@@ -144,6 +186,7 @@ body {
 
   .intro-text h1 {
       margin-bottom: 15px;
+      font-size: 4rem;
   }
 
   .subtitle {
@@ -205,7 +248,8 @@ body {
     width: 100%;
     background-color: rgba(0,0,0,0);
     color: black;
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
+    padding: 0 1rem;
     top: 0;
     left: 0;
     position: fixed;
@@ -236,7 +280,7 @@ body {
 }
 
 .mobile-nav {
-    display: none;
+    /* display: none; */
     position: fixed;
     z-index: 101;
     top: 0;
@@ -244,7 +288,8 @@ body {
     background-color: #fff;
     width: 80%;
     height: 100vh;
-    transition: .3s ease-out;
+    transition: transform .3s ease-out;
+    transform: translateX(-100%);
  
 }
 
@@ -257,11 +302,12 @@ body {
 .mobile-show {
     display: block;
     position: fixed;
-    z-index: 101;
+    z-index: 200;
     top: 0;
     left: 0;
     background-color: #fff;
-    transition: transform .4s ease-out;
+    transition: transform .3s ease-out;
+    transform: translateX(0%);
     width: 80%;
     height: 100vh; 
    
@@ -361,6 +407,12 @@ color: black;
     left: 30%; 
 }
 
+/* @media (min-width:720px) {
+    .intro-text h1{
+        font-size: 1.5rem;
+    }
+} */
+
 @media (min-width: 940px) {
     .initials h2 {
         display: flex;
@@ -370,20 +422,35 @@ color: black;
 
  @media (min-width: 40rem) {
 
-    .intro{
+      .intro{
         display: flex;
-        /* justify-content: center; */
         align-items: center;
-        flex-direction: column;
+       justify-content: center;
+        
+    }   
+
+    .photo-container{
+        min-width: 200px;
+    }
+
+    .intro-wrapper{
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-direction: row-reverse;
+        gap: 3rem;
     }
     
     .intro-text {
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
+         display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        /* align-items: center;
         justify-content: space-between; */
-        text-align: center;
-        font-size: 30px;
+        text-align: left;
+        font-size: 3rem;
     }  
 
     .intro-text h2 {

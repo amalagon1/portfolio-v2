@@ -15,7 +15,7 @@ import 'font-awesome/css/font-awesome.min.css';
 
 function Experience() {
     return (
-        <section className='experience'>
+        <section className='experience' id='about'>
             <div className='experience-items'>
                 {/* <div className="img-container">
                     <img src={me}></img>

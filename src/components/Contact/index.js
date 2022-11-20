@@ -36,7 +36,7 @@ import emailjs from 'emailjs-com';
 
 function Contact() {
     return (
-        <section className='contact'>
+        <section className='contact' id='contact'>
             <h1>Contact me!</h1>
             <div className='contact-form'>
                 <div className='form-items'>
