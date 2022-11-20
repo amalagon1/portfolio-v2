@@ -38,8 +38,8 @@ function Projects() {
             title: "README generator",
             image: project4,
             description: "Node.Js application that runs off-browser und utilizes Inquirer to create professional-grade Readme's.",
-            github: "https://github.com/amalagon1/readme-generator"
-            // deployment:
+            github: "https://github.com/amalagon1/readme-generator",
+            deployment: "https://github.com/amalagon1/readme-generator"
         },
         {
             title: "WWII Trivia Game",
@@ -74,11 +74,11 @@ function Projects() {
                         </div> */}
                         <div className="slider">
                             <p>{item.description}</p>
-                            <button className="project-btn">
-                                <a target="_blank" rel="noopener noreferrer" href={item.deployment}>
-                                    Deployment
-                                </a>
-                            </button>
+
+                            <a className="project-link" target="_blank" rel="noopener noreferrer" href={item.deployment}>
+                                Deployment
+                            </a>
+
 
 
                         </div>

@@ -42,7 +42,8 @@ function Nav({ open, setOpen, toggle, setToggle }) {
         <header className='main-header' id="header">
             <div className='initials'>
                 <a href='#intro'>
-                    <h1>A.M</h1></a>
+                    <h1>A.M</h1>
+                </a>
                 {/* <h1>A.M</h1> */}
                 <h2>Andres Malagon</h2>
             </div>

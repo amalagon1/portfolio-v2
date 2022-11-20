@@ -89,6 +89,22 @@ body {
 
   }
 
+  .btn-work a{
+      text-decoration: none;
+      color: white;
+  }
+
+  .btn-work:hover{
+      color: red;
+      background: white;
+      border: solid 2px black;
+  }
+
+  .btn-work:hover a{
+      color: black;
+      font-weight: bolder;
+  }
+
   .icon-arrow {
       height: 2.5rem;
       position: absolute;
@@ -204,11 +220,17 @@ body {
   }
   
 .initials {
+    color: #071E3D;
     display: flex;
     color: #071E3D;
     align-items: center;
     width: 30%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+.initials a{
+    text-decoration: none;
+    color: #1a1b1f;
 }
 
 .initials h2 {
@@ -246,12 +268,16 @@ body {
 
 .main-header {
     width: 100%;
-    background-color: rgba(0,0,0,0);
+    height: 60px;
+    margin: auto;
+    /* background-color: rgba(0,0,0,0); */
+    /* background: #d3d3d3; */
+    background: rgba(211,211,211,0.4);
     color: black;
     /* padding: 8px 16px; */
     padding: 0 1rem;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     position: fixed;
     z-index: 100;
     display: flex;
@@ -374,6 +400,7 @@ body {
 
 .work-btn:hover {
 color: black;
+border: solid 2px black;
 }
 
 .title h2 {
@@ -427,7 +454,17 @@ color: black;
         align-items: center;
        justify-content: center;
         
-    }   
+    }  
+    
+    .initials {
+        display: flex;
+        gap: 5%;
+        margin-left: 5px;
+    }
+
+    .initials h2 {
+        font-size: 1.2rem;
+    }
 
     .photo-container{
         min-width: 200px;

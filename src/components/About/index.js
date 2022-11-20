@@ -27,7 +27,7 @@ function About() {
                     <h2>Front-end Web Developer</h2>
 
                     <button className="btn-work">
-                        View Work
+                        <a href="#work">View Work</a>
                     </button>
 
                 </div>

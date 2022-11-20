@@ -37,7 +37,7 @@
 
 .card {
     color: black;
-    cursor: pointer;
+    /* cursor: pointer; */
     /* width: 40%; */
     width: 300px;
     height: 350px;
@@ -68,19 +68,21 @@ color: #1a1b1f;
       
 }
 
-.project-btn :hover {
-    color: firebrick;
-    border: firebrick;
-    cursor: pointer;
-}
-
-
-
-.project-btn a {
+.slider a {
     text-decoration: none;
     color: black;
+    background-color:#949494;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 3px;
+    font-size: .8rem;
 }
 
+.slider a:hover {
+background-color: white;
+border: solid 1px firebrick;
+color: firebrick;
+}
 
 /* .card:hover img {
     opacity: 0.3;
