@@ -20,16 +20,21 @@ function Experience() {
                 {/* <div className="img-container">
                     <img src={me}></img>
                 </div> */}
-                <div className='summary'>
-                    <p>I am passionate about creating beautiful and dynamic UI. My experience at the University of Miami coding bootcamp exposed me to a wide variety of technologies and began my passion for programming. I want to build something for you!  </p>
+                <div className='experience__content'>
+                    <div className='summary'>
+                        <p>Recent graduate of a full-stack bootcamp where I was introduced  to a wide variety of technologies and began my love for web development. My background as a jazz musician has made me adept at improvisation and finding creative solutions to problems.   </p>
+                    </div>
+                    <div className='line'></div>
+                    <div className="icons">
+                        <h2>Technologies I enjoy :</h2>
+                        <FontAwesomeIcon className="icon" icon={faReact} />
+                        <FontAwesomeIcon className="icon" icon={faJs} />
+                        <FontAwesomeIcon className="icon" icon={faCss3} />
+                        <FontAwesomeIcon className="icon" icon={faHtml5} />
+                        <FontAwesomeIcon className="icon" icon={faGithub} />
+                    </div>
                 </div>
-                <div className="icons">
-                    <FontAwesomeIcon className="icon" icon={faReact} />
-                    <FontAwesomeIcon className="icon" icon={faJs} />
-                    <FontAwesomeIcon className="icon" icon={faCss3} />
-                    <FontAwesomeIcon className="icon" icon={faHtml5} />
-                    <FontAwesomeIcon className="icon" icon={faGithub} />
-                </div>
+
             </div>
         </section>
 
