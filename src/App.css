@@ -479,6 +479,7 @@ border: solid 2px black;
         flex-direction: row;
         flex-direction: row-reverse;
         gap: 3rem;
+        margin:5px
     }
     
     .intro-text {
