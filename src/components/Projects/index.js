@@ -6,6 +6,7 @@ import project3 from '../../images/project-3.jpg'
 import project4 from '../../images/project-4.jpg'
 import project5 from '../../images/trivia-game.png'
 import project6 from '../../images/todo-app.png'
+import project7 from '../../images/piano.png'
 
 
 function Projects() {
@@ -17,6 +18,14 @@ function Projects() {
         //     github: "https://github.com/amalagon1/password-generator",
         //     deployment: "https://amalagon1.github.io/password-generator/"
         // },
+
+        {
+            title: "The Javascript Piano Experience",
+            image: project7,
+            description: "Virtual piano keyboard made with javascript and css",
+            github: "https://github.com/amalagon1/keyboard-app",
+            deployment: "https://amalagon1.github.io/keyboard-app/"
+        },
 
         {
             title: "Weather Dashboard",
@@ -34,34 +43,38 @@ function Projects() {
             deployment: "https://marcosmanresa.github.io/08-Interactive-Project/"
         },
 
+        // {
+        //     title: "README generator",
+        //     image: project4,
+        //     description: "Node.Js application that runs off-browser und utilizes Inquirer to create professional-grade Readme's.",
+        //     github: "https://github.com/amalagon1/readme-generator",
+        //     deployment: "https://github.com/amalagon1/readme-generator"
+        // },
         {
-            title: "README generator",
-            image: project4,
-            description: "Node.Js application that runs off-browser und utilizes Inquirer to create professional-grade Readme's.",
-            github: "https://github.com/amalagon1/readme-generator",
-            deployment: "https://github.com/amalagon1/readme-generator"
-        },
-        {
-            title: "WWII Trivia Game",
+            // title: "WWII Trivia Game",
             image: project5,
             description: "Trivia game made with vanilla javascript",
             github: "https://github.com/amalagon1/trivia-quiz",
             deployment: "https://amalagon1.github.io/trivia-quiz/"
         },
         {
-            title: "Todo App (Glass Theme)",
+            // title: "Todo App (Glass Theme)",
             description: "Todo app with layout inspired by glassmorphism",
             image: project6,
-            github: "https://github.com/amalagon1/todo-app-glass-theme"
+            github: "https://github.com/amalagon1/todo-app-glass-theme",
+            deployment: "https://glass-todo.netlify.app/"
         }
     ]
     //added projects-grid div//
     return (
         <section id="work" className='projects'>
-            <h1> Check out my projects </h1>
+            <h1> My projects </h1>
             <div className='projects-grid'>
                 {ProjectItems.map((item) =>
                     <div className='card'>
+                        <div className='title'>
+                            <h2>{item.title}</h2>
+                        </div>
                         <img src={item.image}></img>
                         {/* <div className="middle">
                             <div className='title'><h2>{item.title}</h2></div>

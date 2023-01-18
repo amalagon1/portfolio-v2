@@ -83,10 +83,12 @@ function Nav({ open, setOpen, toggle, setToggle }) {
             <nav className={open ? "mobile-show" : "mobile-nav"}>
 
                 <ul className='mobile-nav__items'>
-                    {MenuItems.map((item, index) => {
+                    {MenuItems.map((item) => {
                         return (
                             <li className='mobile-nav__item'>
-                                <a className={item.class}
+                                <a
+                                    onClick={toggleHandler}
+                                    className={item.class}
                                     href={item.url}>
                                     {item.title}</a>
                             </li>
