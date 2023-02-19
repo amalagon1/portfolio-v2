@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4d202180.css",
+    "main.js": "/static/js/main.8511c9ab.js",
+    "static/media/my-face.PNG": "/static/media/my-face.a92e34cab62f4231f90f.PNG",
+    "static/media/trivia-game.png": "/static/media/trivia-game.a2911a61118c190f427a.png",
+    "static/media/weather-app-img.png": "/static/media/weather-app-img.5f45cbe4ec49934159b4.png",
+    "static/media/todo-app.png": "/static/media/todo-app.d1c391379597e7bcefe4.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/project-1.jpg": "/static/media/project-1.65a91fb8cfe41565fa18.jpg",
+    "static/media/project-4.jpg": "/static/media/project-4.7a84cfd5d577d90c9945.jpg",
+    "static/media/my-face-removebg.png": "/static/media/my-face-removebg.945cd746678c75b2517c.png",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/me.JPG": "/static/media/me.1725ff9a16438a0eca69.JPG",
+    "static/media/piano.png": "/static/media/piano.bbd3be40995308faf8d4.png",
+    "static/media/example.png": "/static/media/example.bda3809a48db48490273.png",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/project-3.jpg": "/static/media/project-3.3fe8f5f1e8b1f4593b08.jpg",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "index.html": "/index.html",
+    "main.4d202180.css.map": "/static/css/main.4d202180.css.map",
+    "main.8511c9ab.js.map": "/static/js/main.8511c9ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d202180.css",
+    "static/js/main.8511c9ab.js"
+  ]
+}
