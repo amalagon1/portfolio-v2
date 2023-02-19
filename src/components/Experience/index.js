@@ -17,16 +17,35 @@ function Experience() {
     return (
         <section className='experience' id='about'>
             <div className='experience-items'>
-                {/* <div className="img-container">
-                    <img src={me}></img>
-                </div> */}
+                <div className="experience-title">
+                    <h1>About Me</h1>
+                </div>
+
                 <div className='experience__content'>
+
+                    {/* <div className="left">
+                        <div className='summary'>
+                            <p>Front-end developer with a passion for creating dynamic and beautiful user experiences.   </p>
+                        </div>
+                    </div>
+                    <div className="right">
+                        <div className="icons">
+                            <h2>My technologies :</h2>
+                            <FontAwesomeIcon className="icon" icon={faReact} />
+                            <FontAwesomeIcon className="icon" icon={faJs} />
+                            <FontAwesomeIcon className="icon" icon={faCss3} />
+                            <FontAwesomeIcon className="icon" icon={faHtml5} />
+                            <FontAwesomeIcon className="icon" icon={faGithub} />
+                        </div>
+                    </div> */}
+
                     <div className='summary'>
-                        <p>Recent graduate of a full-stack bootcamp where I was introduced  to a wide variety of technologies and began my love for web development. My background as a jazz musician has made me adept at improvisation and finding creative solutions to problems.   </p>
+
+                        <p>Front-end developer based in NYC, passionate about creating dynamic and beautiful user experiences with Javascript, CSS, HTML, and React. Continually looking to expand my knowledge and help bring great ideas to life.   </p>
                     </div>
                     <div className='line'></div>
                     <div className="icons">
-                        <h2>Technologies I enjoy :</h2>
+                        <h2>My technologies :</h2>
                         <FontAwesomeIcon className="icon" icon={faReact} />
                         <FontAwesomeIcon className="icon" icon={faJs} />
                         <FontAwesomeIcon className="icon" icon={faCss3} />

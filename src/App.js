@@ -33,6 +33,7 @@ function App() {
           open={open} setOpen={setOpen}
           toggle={toggle} setToggle={setToggle} />
         <About></About>
+
         <Experience />
         < Projects />
         <Contact />

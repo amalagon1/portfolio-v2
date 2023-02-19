@@ -22,7 +22,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px 50px ;
+    gap: 20px 100px ;
     
       /* display: grid; 
     grid-template-columns: 300px 300px;
@@ -31,8 +31,15 @@
 
 .projects h1 {
     color: black;
-    margin-bottom: 30px;
     text-align: center;
+}
+
+.title-container {
+    box-shadow: 7px 5px 5px rgba(167,167,167, 0.4);
+    background: rgba(255,255 , 255, 0.3);
+    border-radius: 5px;
+    width: 200px;
+    padding: 1rem;
 }
 
 .card {
@@ -77,6 +84,12 @@
     background: white;
 }
 
+.links{
+    
+    display: flex;
+    gap: 20px;
+}
+
 .project-btn{
 margin-top: 20px;
 color: #1a1b1f;
@@ -94,6 +107,7 @@ color: #1a1b1f;
     margin-top: 10px;
     border-radius: 3px;
     font-size: .8rem;
+    width: 100px;
 }
 
 .slider a:hover {

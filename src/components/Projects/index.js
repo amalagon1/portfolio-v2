@@ -19,13 +19,7 @@ function Projects() {
         //     deployment: "https://amalagon1.github.io/password-generator/"
         // },
 
-        {
-            title: "The Javascript Piano Experience",
-            image: project7,
-            description: "Virtual piano keyboard made with javascript and css",
-            github: "https://github.com/amalagon1/keyboard-app",
-            deployment: "https://amalagon1.github.io/keyboard-app/"
-        },
+
 
         {
             title: "Weather Dashboard",
@@ -33,14 +27,6 @@ function Projects() {
             description: "Weather application made with vanilla javascript, utilizes the openweathermap API.",
             github: "https://github.com/amalagon1/weather-dashboard",
             deployment: "https://amalagon1.github.io/weather-dashboard/"
-        },
-
-        {
-            title: "Best-seller book list",
-            image: project3,
-            description: "This app displays a list of NY Times best-selling books, utilizing vanilla javascript and the NYT API.",
-            github: "https://github.com/MarcosManresa/08-Interactive-Project",
-            deployment: "https://marcosmanresa.github.io/08-Interactive-Project/"
         },
 
         // {
@@ -63,12 +49,21 @@ function Projects() {
             image: project6,
             github: "https://github.com/amalagon1/todo-app-glass-theme",
             deployment: "https://glass-todo.netlify.app/"
-        }
+        },
+        {
+            title: "The Javascript Piano Experience",
+            image: project7,
+            description: "Virtual piano keyboard made with javascript and css",
+            github: "https://github.com/amalagon1/keyboard-app",
+            deployment: "https://amalagon1.github.io/keyboard-app/"
+        },
     ]
     //added projects-grid div//
     return (
         <section id="work" className='projects'>
-            <h1> My projects </h1>
+            <div className="title-container">
+                <h1> Projects </h1>
+            </div>
             <div className='projects-grid'>
                 {ProjectItems.map((item) =>
                     <div className='card'>
@@ -87,12 +82,12 @@ function Projects() {
                         </div> */}
                         <div className="slider">
                             <p>{item.description}</p>
-
-                            <a className="project-link" target="_blank" rel="noopener noreferrer" href={item.deployment}>
-                                Deployment
-                            </a>
-
-
+                            <div className="links">
+                                <a className="project-link" target="_blank" rel="noopener noreferrer" href={item.deployment}>
+                                    Deployment
+                                </a>
+                                <a className="project-link" target="_blank" rel="noopener noreferrer" href={item.github}>Github</a>
+                            </div>
 
                         </div>
                     </div>
