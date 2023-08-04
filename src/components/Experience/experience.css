@@ -206,3 +206,13 @@
     }
 
 }
+
+@media(max-width: 380px){
+    .experience-items{
+        margin-top: 5rem;
+    }
+
+    h1{
+        margin-bottom: 1rem;
+    }
+}
