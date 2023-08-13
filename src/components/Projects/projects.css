@@ -189,3 +189,9 @@ background-color: #90B8F8;
         width: 80%;
     }
 }
+
+@media(max-width:380px){
+    #work{
+        margin-top: 12rem;
+    }
+}

@@ -209,10 +209,13 @@
 
 @media(max-width: 380px){
     .experience-items{
-        margin-top: 5rem;
+        margin-top: 10rem;
     }
 
-    h1{
-        margin-bottom: 1rem;
+    .experience-items h1{
+        margin-bottom: 3rem;
+    }
+    .experience__content{
+        margin-top: 3rem;
     }
 }
