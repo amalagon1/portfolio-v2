@@ -9,17 +9,12 @@ import project6 from '../../images/todo-app.png'
 import project7 from '../../images/piano.png'
 import project8 from '../../images/weather.png'
 import project9 from '../../images/myflix-main.png'
+import ecommerce from '../../images/ecommerce.png'
 
 
 function Projects() {
     //array with project data//
     const ProjectItems = [
-        // {
-        //     title: "Password Generator",
-        //     image: project1,
-        //     github: "https://github.com/amalagon1/password-generator",
-        //     deployment: "https://amalagon1.github.io/password-generator/"
-        // },
         {
             // title: "WWII Trivia Game",
             image: project9,
@@ -28,6 +23,12 @@ function Projects() {
             deployment: "https://myflix-a04d0.web.app/"
         },
 
+        {
+            title: "Bargain Depot",
+            image: ecommerce,
+            github: "https://github.com/amalagon1/ecommerce-app",
+            deployment: "https://ecommerce-app-five-zeta.vercel.app"
+        },
 
         {
             title: "Weather Dashboard",
@@ -37,20 +38,14 @@ function Projects() {
             deployment: "https://weathernow123.netlify.app/"
         },
 
-        {
-            // title: "Todo App (Glass Theme)",
-            description: "Todo app built with React and Css.",
-            image: project6,
-            github: "https://github.com/amalagon1/todo-app-glass-theme",
-            deployment: "https://glass-todo.netlify.app/"
-        },
         // {
-        //     title: "The Javascript Piano Experience",
-        //     image: project7,
-        //     description: "Virtual piano keyboard made with javascript and css",
-        //     github: "https://github.com/amalagon1/keyboard-app",
-        //     deployment: "https://amalagon1.github.io/keyboard-app/"
+
+        //     description: "Todo app built with React and Css.",
+        //     image: project6,
+        //     github: "https://github.com/amalagon1/todo-app-glass-theme",
+        //     deployment: "https://glass-todo.netlify.app/"
         // },
+
         {
             // title: "WWII Trivia Game",
             image: project5,
