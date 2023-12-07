@@ -8,7 +8,11 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faAnchor } from '@fortawesome/free-solid-svg-icons'
 import { faFighterJet } from '@fortawesome/free-solid-svg-icons';
 import { faReact, faJs, faCss3, faHtml5, faGithub, } from '@fortawesome/fontawesome-free-brands';
+import { SiTailwindcss } from "react-icons/si";
+import { FaSass } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
 import 'font-awesome/css/font-awesome.min.css';
+
 
 
 
@@ -47,10 +51,13 @@ function Experience() {
                     <div className="icons">
                         <h2>My technologies :</h2>
                         <FontAwesomeIcon className="icon" icon={faReact} />
+                        <TbBrandNextjs className="icon" />
                         <FontAwesomeIcon className="icon" icon={faJs} />
                         <FontAwesomeIcon className="icon" icon={faCss3} />
                         <FontAwesomeIcon className="icon" icon={faHtml5} />
                         <FontAwesomeIcon className="icon" icon={faGithub} />
+                        <SiTailwindcss className="icon" />
+                        <FaSass className="icon" />
                     </div>
                 </div>
 

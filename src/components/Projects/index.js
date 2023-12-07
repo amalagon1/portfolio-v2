@@ -26,6 +26,7 @@ function Projects() {
         {
             title: "Bargain Depot",
             image: ecommerce,
+            description: "Ecommerce app built with NextJs, Tailwind, Firebase, and Stripe Checkout",
             github: "https://github.com/amalagon1/ecommerce-app",
             deployment: "https://ecommerce-app-five-zeta.vercel.app"
         },
